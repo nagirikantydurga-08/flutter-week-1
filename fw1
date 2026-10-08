@@ -1,0 +1,109 @@
+class Person {
+  String name;
+  int age;
+
+  Person(this.name, this.age);
+
+  void greet() {
+    print("Hello, my name is $name");
+  }
+}
+
+int add(int a, int b) {
+  return a + b;
+}
+
+void main() {
+  // Variable Demo
+  int integerValue = 42;
+  double doubleValue = 3.1416;
+  String stringValue = "Hello Dart";
+  bool booleanValue = true;
+
+  List<String> fruits = ["apple", "banana", "cherry"];
+
+  Map<String, dynamic> person = {
+    "name": "Alice",
+    "age": 25
+  };
+
+  print("--- Variable Demo ---");
+  print("Integer: $integerValue");
+  print("Double: $doubleValue");
+  print("String: $stringValue");
+  print("Boolean: $booleanValue");
+  print("List: $fruits");
+  print("Map: $person");
+
+  // var, final and const
+  var city = "London";
+  final int finalVar = 100;
+  const double constVar = 3.14;
+
+  print("\n--- final & const ---");
+  print("var city = $city");
+  print("finalVar = $finalVar");
+  print("constVar = $constVar");
+
+  // Function Demo
+  print("\n--- Function Demo ---");
+  print("Sum of 5 and 7 = ${add(5, 7)}");
+
+  // If-Else Demo
+  print("\n--- If-Else Demo ---");
+
+  int marks = 75;
+
+  if (marks >= 50) {
+    print("Marks: $marks");
+    print("Result: Pass");
+  } else {
+    print("Marks: $marks");
+    print("Result: Fail");
+  }
+
+  // Loop Demo
+  print("\n--- Loop Demo ---");
+
+  for (int i = 1; i <= 5; i++) {
+    print(i);
+  }
+
+  // Class Demo
+  print("\n--- Class Demo ---");
+
+  Person p = Person("John", 30);
+
+  print("Person: ${p.name}, Age: ${p.age}");
+  p.greet();
+}
+--- Variable Demo ---
+Integer: 42
+Double: 3.1416
+String: Hello Dart
+Boolean: true
+List: [apple, banana, cherry]
+Map: {name: Alice, age: 25}
+
+--- final & const ---
+var city = London
+finalVar = 100
+constVar = 3.14
+
+--- Function Demo ---
+Sum of 5 and 7 = 12
+
+--- If-Else Demo ---
+Marks: 75
+Result: Pass
+
+--- Loop Demo ---
+1
+2
+3
+4
+5
+
+--- Class Demo ---
+Person: John, Age: 30
+Hello, my name is John
